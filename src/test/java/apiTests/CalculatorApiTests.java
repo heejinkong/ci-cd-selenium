@@ -37,16 +37,16 @@ CalculatorApiTests {
 		assertEquals(15, result);
 	}
 
-//	@Test
-//	void getSum() {
-//		ResponseEntity<Integer> result = testRestTemplate.getForEntity(server+":" + randomServerPort + "/api/sum?a=5&b=10", Integer.class);
-//		assertEquals(15, result.getBody());
-//	}
+	@Test
+	void getSum() {
+		ResponseEntity<Integer> result = testRestTemplate.getForEntity(server+":" + randomServerPort + "/api/sum?a=5&b=10", Integer.class);
+		assertEquals(15, result.getBody());
+	}
 
-	// @Test
-	// void getDiff() {
-	// 	int result = testRestTemplate.getForObject(server+":" + randomServerPort + "/diff?a=5&b=10", Integer.class);
-	// 	assertEquals(-5, result);
-	// }
+	 @Test
+	 void getDiff() {
+	 	int result = testRestTemplate.getForObject(server+":" + randomServerPort + "/diff?a=5&b=10", Integer.class);
+	 	assertEquals(-5, result);
+	 }
 
 }
