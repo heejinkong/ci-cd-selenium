@@ -4,7 +4,7 @@ public class Calculator {
 
     private int a;
     private int b;
-   // private int sum;
+    // private int sum;
     private int result;
 
     public Calculator() {
@@ -21,7 +21,6 @@ public class Calculator {
         return this.result;
     }
 
-
     public void setLeftOperand(int a) {
         this.a = a;
     }
@@ -31,9 +30,8 @@ public class Calculator {
     }
 
     public int getDifference() {
-         this.result = a - b;
-         return this.result;
+        this.result = a - b;
+        return this.result;
     }
 
 }
-
